@@ -1,0 +1,57 @@
+G. Mani
+
+1. variables
+marine irukura value ku name kudutha athuku name variable.
+
+2. identifiers and keywords
+maruna value ku name kuthalum maratha value ku name kuduthalum athuku name identifiers nu artham.
+
+3. function 
+function declaration la definition la irukurathu parameter,
+antha functiona call panum bothu pass panra value than argument.
+
+Javascript Methods
+1. onmouseover click()
+
+<form>
+<input type="checkbox" id="mycheck" onmouseover="myFunction()">
+</form>
+<script>
+function myFunction(){
+document.getElementById("mycheck").click();
+}
+</script>
+
+2.getElementsByClassName()
+
+<ul class="example">
+  <li class="child">Coffee</li>
+  <li class="child">Tea</li>
+</ul>
+
+<p>Click "Change" to change the text of the first list item:</p>
+<button onclick="myFunction()">Change</button>
+
+<script>
+function myFunction() {
+  const list = document.getElementsByClassName("example")[0];
+  list.getElementsByClassName("child")[0].innerHTML = "Milk";
+}
+</script>
+
+3. No of elements
+<div id="myDIV">
+  <p class="child">I am a paragraph.</p>
+  <p class="child">I am a paragraph.</p>
+  <p class="child">I am a paragraph.</p>
+</div>
+
+<p>The number of elements with class "child" are:</p>
+<p id="demo"></p>
+
+<script>
+const element = document.getElementById("myDIV"); 
+const nodes = element.getElementsByClassName("child");
+document.getElementById("demo").innerHTML = nodes.length;
+</script>
+Output:The number of elements with class "child" are:3
